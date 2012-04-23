@@ -65,7 +65,7 @@ function display_db_query($query_string, $connection, $names) {
 }
 
 function display_db_table($tablename, $connection, $names) {
-    $fields = array("APP_VERSION_NAME", "USER_CRASH_DATE", "ANDROID_VERSION", "PHONE_MODEL", "PACKAGE_NAME", "STACK_TRACE");
+    $fields = array("APP_VERSION_NAME", "CRASH_REPORT_DATE", "ANDROID_VERSION", "PHONE_MODEL", "PACKAGE_NAME", "STACK_TRACE");
 
     $query_string = 'SELECT ' . implode(',', $fields) . ' FROM ' . $tablename;
 

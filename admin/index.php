@@ -42,7 +42,7 @@
                     <?php
                     include("core.php");
 
-                    $names = array("Version", "Datum", "OS", "Model", "Package", "Stack Trace");
+                    $names = array("Version", "Crash report date", "OS", "Model", "Package", "Stack Trace");
 
                     display_db_table($table, $global_dbh, $names);
                     ?>
